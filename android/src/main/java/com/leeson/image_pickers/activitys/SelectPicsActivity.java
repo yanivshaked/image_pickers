@@ -194,6 +194,7 @@ public class SelectPicsActivity extends BaseActivity {
                         pictureSelectionModel = pictureSelector.openGallery("image".equals(mode) ? PictureMimeType.ofImage() : PictureMimeType.ofVideo());
                     }
                     pictureSelectionModel
+                            .setLanguage(2)
                             .loadImageEngine(GlideEngine.createGlideEngine())
                             .isOpenStyleNumComplete(true)
                             .isOpenStyleCheckNumMode(true)
