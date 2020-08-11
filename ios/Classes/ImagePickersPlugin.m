@@ -87,7 +87,9 @@ static NSString *const CHANNEL_NAME = @"flutter/image_pickers";
         configuration.allowTakePhotoInLibrary =showCamera;//是否显示摄像头
         configuration.allowSelectOriginal =NO;//不选择原图
         configuration.allowEditImage =enableCrop;
-        configuration.hideClipRatiosToolBar =enableCrop;
+        configuration.allowEditVideo =enableCrop;
+        configuration.editAfterSelectThumbnailImage=enableCrop;
+        configuration.hideClipRatiosToolBar =YES;
         configuration.cellCornerRadio =30;
         configuration.clipRatios =@[@{
                                         @"value1":[NSNumber numberWithInt:width],//第一个是宽
@@ -201,7 +203,9 @@ static NSString *const CHANNEL_NAME = @"flutter/image_pickers";
             ac.configuration.allowTakePhotoInLibrary =showCamera;//是否显示摄像头
             ac.configuration.allowSelectOriginal =NO;//不选择原图
             ac.configuration.allowEditImage =enableCrop;
-            ac.configuration.hideClipRatiosToolBar =enableCrop;
+            ac.configuration.allowEditVideo =enableCrop;
+            ac.configuration.editAfterSelectThumbnailImage=enableCrop;
+            ac.configuration.hideClipRatiosToolBar =YES;
             ac.configuration.clipRatios =@[@{
                                                @"value1":[NSNumber numberWithInt:width],//第一个是宽
                                                @"value2":[NSNumber numberWithInt:height],//第二个是高
