@@ -545,7 +545,7 @@ public class Saver {
                             @Override
                             public void run() {
                                 if (iDownload != null) {
-                                    iDownload.onDownloadFailed("下载失败");
+                                    iDownload.onDownloadFailed("Download failed");
                                 }
                             }
                         });
