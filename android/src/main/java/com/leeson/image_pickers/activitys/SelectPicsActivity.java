@@ -199,7 +199,6 @@ public class SelectPicsActivity extends BaseActivity {
                             .isOpenStyleNumComplete(true)
                             .isOpenStyleCheckNumMode(true)
 
-                            .setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
                             .setPictureStyle(pictureStyleUtil.getStyle(uiColor))
                             .setPictureCropStyle(pictureStyleUtil.getCropStyle(uiColor))
 
